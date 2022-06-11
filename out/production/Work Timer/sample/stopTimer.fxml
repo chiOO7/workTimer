@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" maxHeight="200.0" maxWidth="200" minHeight="200.0" minWidth="200" prefHeight="200.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.StopTimerController">
+   <children>
+      <Label fx:id="textLabel" text="Время сделать перерыв!">
+         <VBox.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </VBox.margin>
+      </Label>
+      <Label fx:id="stopTimerLabel" text="0:0">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Button fx:id="stopTimerBtn" mnemonicParsing="false" onAction="#stopTimerAction" text="Сделать перерыв">
+         <VBox.margin>
+            <Insets bottom="20.0" top="20.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+</VBox>
